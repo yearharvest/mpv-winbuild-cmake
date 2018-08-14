@@ -1,5 +1,5 @@
 ExternalProject_Add(nettle
-    GIT_REPOSITORY https://gitlab.com/shinchiro/nettle.git
+    GIT_REPOSITORY https://git.lysator.liu.se/nettle/nettle.git
     GIT_SHALLOW 1
     PATCH_COMMAND ${EXEC} git am ${CMAKE_CURRENT_SOURCE_DIR}/nettle-*.patch
     UPDATE_COMMAND ""
