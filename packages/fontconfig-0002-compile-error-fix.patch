@@ -1,0 +1,13 @@
+diff --git a/src/fcstr.c b/src/fcstr.c
+index bfddd68..4247c85 100644
+--- a/src/fcstr.c
++++ b/src/fcstr.c
+@@ -872,7 +872,7 @@ FcStrIsAbsoluteFilename (const FcChar8 *s)
+ {
+ #ifdef _WIN32
+     if (*s == '\\' ||
+-	(isalpha (*s) && s[1] == ':' && (s[2] == '/' || s[2] == '\\'))
++	(isalpha (*s) && s[1] == ':' && (s[2] == '/' || s[2] == '\\')))
+ 	return FcTrue;
+ #endif
+     return *s == '/';
